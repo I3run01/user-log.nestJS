@@ -22,7 +22,7 @@ describe('UsersController (e2e)', () => {
       controllers: [UsersController],
       providers: [
         UsersService,
-        { provide: getModelToken(User.name), useValue: mockUserModel },      ],
+        { provide: getModelToken(User.name), useValue: mockUserModel },],
     }).compile();
 
     app = module.createNestApplication();
